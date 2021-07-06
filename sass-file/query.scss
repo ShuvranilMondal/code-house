@@ -1,0 +1,36 @@
+@media (max-width: 600px){
+    html{
+        font-size: 50%;
+    }
+    @mixin tran {
+        transition: all 0.5s ease-in-out;
+    }
+    #navbar{
+        min-height: 6rem;
+        height: auto;
+        @include tran;
+        .nav-container{
+            padding: 3rem 0;
+            align-items:flex-start;
+            
+            #nav-btn{
+                display: block;
+            }
+            .nav-items{
+                @include tran;
+                display: none;
+                flex-direction: column;
+                text-align: center;
+
+                li{
+                    margin-bottom: 3rem;
+                }
+            }
+            .nav-active{
+                @include tran;
+                display: flex;
+            }
+            
+        }
+    }
+}

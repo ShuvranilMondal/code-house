@@ -1,0 +1,41 @@
+@media (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+  #navbar {
+    min-height: 6rem;
+    height: auto;
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+  }
+  #navbar .nav-container {
+    padding: 3rem 0;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #navbar .nav-container #nav-btn {
+    display: block;
+  }
+  #navbar .nav-container .nav-items {
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  #navbar .nav-container .nav-items li {
+    margin-bottom: 3rem;
+  }
+  #navbar .nav-container .nav-active {
+    -webkit-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+/*# sourceMappingURL=query.css.map */
