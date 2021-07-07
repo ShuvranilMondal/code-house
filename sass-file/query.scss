@@ -8,7 +8,6 @@
     #navbar{
         min-height: 6rem;
         height: auto;
-        @include tran;
         .nav-container{
             padding: 3rem 0;
             align-items:flex-start;
@@ -17,7 +16,6 @@
                 display: block;
             }
             .nav-items{
-                @include tran;
                 display: none;
                 flex-direction: column;
                 text-align: center;
@@ -27,7 +25,6 @@
                 }
             }
             .nav-active{
-                @include tran;
                 display: flex;
             }
             

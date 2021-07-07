@@ -13,11 +13,12 @@ html {
 }
 
 #navbar {
+  z-index: 100;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+  position: fixed;
   width: 100%;
   height: 6rem;
-  background: rgba(0, 0, 0, 0.356);
 }
 
 #navbar .nav-container {
@@ -70,12 +71,95 @@ html {
 }
 
 #navbar .nav-container .nav-items li:hover a {
-  color: orange;
+  color: orangered;
 }
 
 #navbar .nav-container .nav-items li a {
   color: white;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+#showcase {
+  width: 100%;
+  height: 100vh;
+}
+
+#showcase .img-con {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+#showcase .img-con img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#showcase .overlay {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.774);
+  height: 100%;
+  width: 100%;
+}
+
+#showcase .overlay h2 {
+  font-size: 5rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+}
+
+#showcase .overlay p {
+  font-size: 2.5rem;
+  color: white;
+  text-transform: capitalize;
+}
+
+#showcase .overlay p #line-change {
+  color: orangered;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#showcase .overlay a {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding: 0.5em 0.8em;
+  color: white;
+  background-color: orangered;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  display: inline-block;
+  margin-top: 2rem;
+  margin-left: 1rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#showcase .overlay a:hover {
+  background-color: transparent;
+  border-color: white;
 }
 /*# sourceMappingURL=file.css.map */
