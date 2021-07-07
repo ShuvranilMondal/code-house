@@ -91,9 +91,29 @@ html{
         height: 100%;
         width: 100%;
         position: relative;
+        overflow: hidden;
 
         img{
             @include img;
+            @include tran;
+            animation: zoom 3s linear infinite ;
+        }
+
+        @keyframes zoom {
+            0%{
+                transform: scale(1.2);
+            }
+            15%{
+                transform: scale(1);
+            }
+            85%{
+                transform: scale(1);
+            }
+            100%{
+                transform: scale(1.2);
+            }
+
+
         }
     }
     .overlay{
@@ -116,18 +136,39 @@ html{
             font-weight: 700;
             letter-spacing: 0.3rem;
         }
-        p{
-            font-size: 2.5rem;
-            color: white;
-            text-transform: capitalize;
+        .con{
 
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            p{
+                font-size: 2.5rem;
+                color: white;
+                text-transform: capitalize;
+                margin-right: 0.5rem;
+            }
             #line-change{
+                white-space: nowrap;
+                overflow: hidden;
+                border-right: 2px solid orangered;
                 color: orangered;
                 text-transform: uppercase;
                 font-weight: 700;
+                font-size: 2.5rem;
+                width: 0ch;
+                @include tran;
+                animation: type 4s infinite forwards;
             }
-
+            @keyframes type {
+                0%{
+                    width: 0ch;
+                }
+                50%{
+                    width: 3.5ch;
+                }
+            }
         }
+        
         a{
             @include btn;
             display:inline-block;

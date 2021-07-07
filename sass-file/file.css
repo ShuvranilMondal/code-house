@@ -89,6 +89,7 @@ html {
   height: 100%;
   width: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 #showcase .img-con img {
@@ -98,6 +99,48 @@ html {
      object-fit: cover;
   -o-object-position: center;
      object-position: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-animation: zoom 3s linear infinite;
+          animation: zoom 3s linear infinite;
+}
+
+@-webkit-keyframes zoom {
+  0% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  15% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  85% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+}
+
+@keyframes zoom {
+  0% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  15% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  85% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
 }
 
 #showcase .overlay {
@@ -131,16 +174,57 @@ html {
   letter-spacing: 0.3rem;
 }
 
-#showcase .overlay p {
+#showcase .overlay .con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#showcase .overlay .con p {
   font-size: 2.5rem;
   color: white;
   text-transform: capitalize;
+  margin-right: 0.5rem;
 }
 
-#showcase .overlay p #line-change {
+#showcase .overlay .con #line-change {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid orangered;
   color: orangered;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 2.5rem;
+  width: 0ch;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-animation: type 4s infinite forwards;
+          animation: type 4s infinite forwards;
+}
+
+@-webkit-keyframes type {
+  0% {
+    width: 0ch;
+  }
+  50% {
+    width: 3.5ch;
+  }
+}
+
+@keyframes type {
+  0% {
+    width: 0ch;
+  }
+  50% {
+    width: 3.5ch;
+  }
 }
 
 #showcase .overlay a {

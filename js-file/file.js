@@ -1,5 +1,6 @@
 let nav = document.getElementById("nav");
 let navBtn = document.getElementById("nav-btn");
+let navBar = document.getElementById("navbar");
 let navbar=()=>{
     nav.classList.toggle("nav-active");
 }
@@ -22,4 +23,22 @@ let bgImageChnage=()=>{
     }, 3000);
 }
 
-bgImageChnage()
+bgImageChnage();
+
+
+
+let line = document.getElementById("line-change");
+
+let typeAnimation=()=>{
+    let li = ["joy","Me","fun"];
+    let i = 0;
+    setInterval(()=>{
+        if(i > li.length-1){
+            i = 0;
+        }
+        line.innerHTML = li[i];
+        i++
+    },4000);
+    
+}
+typeAnimation();
