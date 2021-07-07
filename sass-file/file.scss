@@ -9,6 +9,9 @@ html{
     font-size: 62.5%;
     font-family: 'Nunito', sans-serif;
 }
+body{
+    position: relative;
+}
 @mixin container {
     width: 90%;
     max-width: 1200px;
@@ -86,6 +89,7 @@ html{
 #showcase{
     width: 100%;
     height: 100vh;
+    position: relative;
 
     .img-con{
         height: 100%;
@@ -135,6 +139,12 @@ html{
             text-transform: uppercase;
             font-weight: 700;
             letter-spacing: 0.3rem;
+
+            span{
+                color: orangered;
+                font-weight: 700;
+                font-size: 6rem;
+            }
         }
         .con{
 
@@ -184,3 +194,42 @@ html{
 
     }
 }
+
+.social-link{
+    position: fixed;
+    top: 35%;
+    left: 0rem;
+    // transform: translate(-50%,-50%);
+
+
+    a{
+        display: block;
+        padding: 0.3em 0.6em;
+        background: orangered;
+        margin-bottom: 1rem;
+        font-size: 3rem;
+        border-radius: 1rem;
+        @include tran;
+
+        &:nth-child(1):hover{
+            background-color: blue;
+        }
+        &:nth-child(2):hover{
+            background-color: rgb(1, 1, 160);
+        }
+        &:nth-child(3):hover{
+            background-color: rgb(6, 123, 233);
+        }
+
+
+        i{
+            color: white;
+            font-size: 3rem;
+            opacity: 1;
+        }
+    }
+    
+}
+
+
+

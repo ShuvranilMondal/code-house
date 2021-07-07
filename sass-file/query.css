@@ -31,5 +31,15 @@
     display: -ms-flexbox;
     display: flex;
   }
+  #showcase .ovrlay h2 {
+    font-size: 0.2rem;
+  }
+  .social-link {
+    top: 92%;
+    left: 28%;
+  }
+  .social-link a {
+    display: inline-block;
+  }
 }
 /*# sourceMappingURL=query.css.map */

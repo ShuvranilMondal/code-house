@@ -30,4 +30,19 @@
             
         }
     }
+    #showcase{
+        .ovrlay{
+            h2{
+                font-size: 0.2rem;
+            }
+        }
+    }
+    .social-link{
+        top: 92%;
+        left: 28%;
+
+        a{
+            display: inline-block;
+        }
+    }
 }
