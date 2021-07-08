@@ -231,5 +231,80 @@ body{
     
 }
 
+.popbox{
+    @include tran;
+    opacity: 0;
+    z-index: 500;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 35rem;
+    min-height: 50rem;
+    height: auto;
+    background-color: white;
+    padding: 2rem;
+    visibility: hidden;
 
+    label{
+        display: block;
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+    input{
+        display: block;
+        outline: none;
+        width: 100%;
+        border: 1px solid orangered ;
+        margin-bottom: 1rem;
+        height: 4rem;
+        padding: 0 1rem;
+        border-radius: 1rem;
+    }
+    .log-logo{
+        text-align: center;
+        margin-bottom: 3rem;
+        i{
+            font-size: 6rem;
+            color: orangered;
+        }
+    }
+    .log-btn{
+        text-align: center;
+        a{
+            display: inline-block;
+            @include btn;
+            @include tran;
+            background-color: orangered;
+            color: white;
+            margin: 2rem auto;
+            text-align: center;
 
+            &:hover{
+                background-color: rgb(185, 49, 0);
+            }
+        }
+    }
+}
+
+.pop-active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+}
+
+.black{
+    visibility: hidden;
+    z-index: 200;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.644);
+}
+.black-active{
+    visibility: visible;
+}

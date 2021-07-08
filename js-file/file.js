@@ -42,3 +42,60 @@ let typeAnimation=()=>{
     
 }
 typeAnimation();
+
+
+
+let signBtn = document.getElementById("sign-in");
+let popBox = document.getElementById('pop-box');
+let black = document.getElementById('blk');
+let popelement = document.querySelector(".popbox");
+let logBtn = document.getElementById("login");
+
+signBtn.addEventListener("click",()=>{
+    let singData = `
+    <div class="log-logo"><i class="fas fa-clipboard-check"></i></div>
+    <label for="username">Username :</label>
+    <input type="text" required placeholder="Username">
+    <label for="password">Password :</label>
+    <input type="password" name="" id="ps" required placeholder="Password">
+    <label for="Email">Email :</label>
+    <input type="email" name="" id="em" required placeholder="Email">
+    <div class="log-btn">
+        <a href="#">Creat</a>
+        <a href="#" id="close">Cancle</a>
+    </div>`;
+    popelement.innerHTML = singData;
+    black.classList.add('black-active');
+    popBox.classList.add('pop-active');
+
+    let cancleBtn = document.getElementById('close');
+
+    cancleBtn.addEventListener("click",()=>{
+        popBox.classList.remove('pop-active');
+        black.classList.remove('black-active');
+    })
+})
+
+logBtn.addEventListener("click",()=>{
+    let singData = `
+    <div class="log-logo"><i class="fas fa-clipboard-check"></i></div>
+    <label for="password">Password :</label>
+    <input type="password" name="" id="ps" required placeholder="Password">
+    <label for="Email">Email :</label>
+    <input type="email" name="" id="em" required placeholder="Email">
+    <div class="log-btn">
+        <a href="#">Login</a>
+        <a href="#" id="close">Cancle</a>
+    </div>`;
+    popelement.innerHTML = singData;
+    black.classList.add('black-active');
+    popBox.classList.add('pop-active');
+
+    let cancleBtn = document.getElementById('close');
+
+    cancleBtn.addEventListener("click",()=>{
+        popBox.classList.remove('pop-active');
+        black.classList.remove('black-active');
+    })
+})
+
