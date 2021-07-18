@@ -42,4 +42,19 @@
     display: inline-block;
   }
 }
+
+#items .course-items {
+  overflow-x: auto;
+  margin-bottom: 3rem;
+}
+
+#items .course-items::-webkit-scrollbar {
+  display: none;
+}
+
+#items .course-items .box {
+  height: 100%;
+  min-width: 20rem;
+  margin-right: 2rem;
+}
 /*# sourceMappingURL=query.css.map */

@@ -46,3 +46,18 @@
         }
     }
 }
+#items{
+    .course-items{
+        overflow-x: auto;
+        margin-bottom: 3rem;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        .box{
+            height: 100%;
+            min-width: 20rem;
+            margin-right: 2rem;
+        }
+    }
+}

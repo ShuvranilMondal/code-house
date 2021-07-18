@@ -385,4 +385,92 @@ body {
 .black-active {
   visibility: visible;
 }
+
+#items {
+  padding: 5rem;
+  background-color: #e6e6e6;
+}
+
+#items h2 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+#items .course-items {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  height: 30rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#items .course-items .box {
+  height: 100%;
+  width: 18%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border-radius: 2rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#items .course-items .box:hover {
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+}
+
+#items .course-items .box i {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  color: orangered;
+}
+
+#items .course-items .box h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 2rem;
+}
+
+#items .course-items .box a {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  padding: 0.5em 0.8em;
+  color: white;
+  background-color: orangered;
+  border-radius: 1rem;
+  border: 1px solid transparent;
+  font-size: 1rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#items .course-items .box a:hover {
+  background-color: #b43000;
+}
 /*# sourceMappingURL=file.css.map */

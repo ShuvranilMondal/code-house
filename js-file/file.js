@@ -78,7 +78,7 @@ signBtn.addEventListener("click",()=>{
 
 logBtn.addEventListener("click",()=>{
     let singData = `
-    <div class="log-logo"><i class="fas fa-clipboard-check"></i></div>
+    <div class="log-logo"><i class="fas fa-sign-in-alt"></i></div>
     <label for="password">Password :</label>
     <input type="password" name="" id="ps" required placeholder="Password">
     <label for="Email">Email :</label>

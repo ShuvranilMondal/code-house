@@ -308,3 +308,64 @@ body{
 .black-active{
     visibility: visible;
 }
+
+#items{
+    padding: 5rem;
+    background-color: rgb(230, 230, 230);
+
+    h2{
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 4rem;
+        font-weight: 400;
+        margin-bottom: 3rem;
+    }
+
+    .course-items{
+        @include container;
+        display: flex;
+        flex-direction: row;
+        height: 30rem;
+        justify-content: space-between;
+        
+
+        .box{
+            height: 100%;
+            width: 18%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 2rem;
+            @include tran;
+
+            &:hover{
+                transform: scale(0.9,0.9);
+            }
+
+            i{
+                font-size: 5rem;
+                margin-bottom: 2rem;
+                color: orangered;
+            }
+            h3{
+                font-size: 1.5rem;
+                text-transform: uppercase;
+                letter-spacing: 0.2rem;
+                margin-bottom: 2rem;
+            }
+            a{
+                @include btn;
+                font-size: 1rem;
+                @include tran;
+
+                &:hover{
+                    background-color: rgb(180, 48, 0);
+                }
+            }
+            
+        }
+    }
+}
