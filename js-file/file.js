@@ -99,3 +99,10 @@ logBtn.addEventListener("click",()=>{
     })
 })
 
+window.addEventListener(('scroll'),()=>{
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300){
+        navBar.style.backgroundColor = 'rgba(0, 0, 0, 0.356)';
+    } else{
+        navBar.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+    }
+})

@@ -473,4 +473,62 @@ body {
 #items .course-items .box a:hover {
   background-color: #b43000;
 }
+
+#vd-box {
+  padding: 5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#vd-box h2 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+#vd-box .vd-con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#vd-box .vd-con #video {
+  width: 50rem;
+  height: 30rem;
+  border: 1px solid red;
+  margin: 0 3rem;
+}
+
+#vd-box .vd-con #video embed {
+  width: 100%;
+  height: 100%;
+}
+
+#vd-box .vd-con a {
+  font-size: 3rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  color: orangered;
+}
+
+#vd-box .vd-con a:hover {
+  color: #cf3700;
+}
 /*# sourceMappingURL=file.css.map */

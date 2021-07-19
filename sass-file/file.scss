@@ -369,3 +369,42 @@ body{
         }
     }
 }
+#vd-box{
+    padding: 5rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    h2{
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 4rem;
+        font-weight: 400;
+        margin-bottom: 3rem;
+    }
+
+    .vd-con{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        #video{
+            width: 50rem;
+            height: 30rem;
+            border: 1px solid red;
+            margin: 0 3rem;
+
+            embed{
+                width: 100%;
+                height: 100%;
+            }
+        }
+        a{
+            font-size: 3rem;
+            @include tran;
+            color: orangered;
+            &:hover{
+                color: rgb(207, 55, 0);
+            }
+        }
+    }
+}
