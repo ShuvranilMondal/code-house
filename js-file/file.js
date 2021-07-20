@@ -100,9 +100,15 @@ logBtn.addEventListener("click",()=>{
 })
 
 window.addEventListener(('scroll'),()=>{
+    let homeBtn = document.getElementById("home-btn");
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300){
         navBar.style.backgroundColor = 'rgba(0, 0, 0, 0.356)';
-    } else{
+        homeBtn.style.display = "";
+        homeBtn.style.opacity = 1
+    }else{
         navBar.style.backgroundColor = 'rgba(0, 0, 0, 0)';
+        homeBtn.style.display = 'none';
     }
 })
+
+

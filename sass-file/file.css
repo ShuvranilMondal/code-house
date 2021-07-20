@@ -5,6 +5,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 html {
@@ -521,14 +522,77 @@ body {
   height: 100%;
 }
 
-#vd-box .vd-con a {
+#vd-box .vd-con #pre-btn, #vd-box .vd-con #nxt-btn {
+  cursor: pointer;
+}
+
+#vd-box .vd-con #pre-btn i, #vd-box .vd-con #nxt-btn i {
   font-size: 3rem;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: orangered;
 }
 
-#vd-box .vd-con a:hover {
+#vd-box .vd-con #pre-btn i:hover, #vd-box .vd-con #nxt-btn i:hover {
   color: #cf3700;
+}
+
+#vd-box #display {
+  margin-top: 2rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: orangered;
+}
+
+#home-btn {
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: fixed;
+  opacity: 0;
+  bottom: 8rem;
+  right: 2rem;
+  font-size: 3rem;
+  background-color: orangered;
+  padding: 0.5rem 0.8rem;
+  border-radius: 5rem;
+  color: white;
+  -webkit-animation: upp 3s ease-in-out forwards infinite;
+          animation: upp 3s ease-in-out forwards infinite;
+  -webkit-transform: translate(0);
+          transform: translate(0);
+}
+
+#home-btn:hover {
+  background-color: #ce3700;
+}
+
+@-webkit-keyframes upp {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(1);
+            transform: translateY(1);
+  }
+}
+
+@keyframes upp {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    -webkit-transform: translateY(1);
+            transform: translateY(1);
+  }
 }
 /*# sourceMappingURL=file.css.map */

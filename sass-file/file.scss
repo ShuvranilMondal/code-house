@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
 html{
     font-size: 62.5%;
@@ -398,13 +399,51 @@ body{
                 height: 100%;
             }
         }
-        a{
-            font-size: 3rem;
-            @include tran;
-            color: orangered;
-            &:hover{
-                color: rgb(207, 55, 0);
+        #pre-btn,#nxt-btn{
+            cursor: pointer;
+            i{
+                font-size: 3rem;
+                @include tran;
+                color: orangered;
+                &:hover{
+                    color: rgb(207, 55, 0);
+                }
             }
         }
+    }
+    #display{
+        margin-top: 2rem;
+        font-size: 3rem;
+        font-weight: 700;
+        color: orangered;
+    }
+}
+#home-btn{
+    @include tran;
+    position: fixed;
+    opacity: 0;
+    bottom: 8rem;
+    right: 2rem;
+    font-size: 3rem;
+    background-color:orangered;
+    padding: 0.5rem 0.8rem;
+    border-radius: 5rem;
+    color: white;
+    animation: upp 3s ease-in-out forwards infinite;
+    transform: translate(0);
+
+    &:hover{
+        background-color: rgb(206, 55, 0);
+    }
+}
+@keyframes upp{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(1);
     }
 }
