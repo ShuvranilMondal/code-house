@@ -451,7 +451,7 @@ body{
 #tutor{
     padding: 3rem 0;
     background-color: rgb(236, 236, 236);
-    min-height: 60vh;
+    min-height: 75vh;
     height: auto;
     h3{
         text-align: center;
@@ -473,10 +473,28 @@ body{
                 align-items: center;
 
                 .img-box{
+                    position: relative;
                     width: 20rem;
                     height: 20rem;
                     border-radius: 50rem;
                     margin-bottom: 1rem;
+
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 100%;
+                        top: 0;
+                        left: 0;
+                        background: rgba(0, 0, 0, 0.541);
+                        opacity: 0;
+                        z-index: 1;
+                        @include tran;
+                    }
+                    &:hover::after{
+                        opacity: 1;
+                    }
 
                     img{
                         width: 100%;
@@ -485,6 +503,24 @@ body{
                         object-position: center;
                         border-radius: 100%;
                     }
+                    .img-con{
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%,-50%);
+                        z-index: 999;
+                        opacity: 0;
+                        @include tran;
+
+                        a{
+                            font-size: 2rem;
+                            color: white;
+                            margin-left: 1rem;
+                        }
+                    }
+                    &:hover .img-con{
+                        opacity: 1;
+                    }
                 }
                 h2{
                     font-size: 2.5rem;
@@ -492,7 +528,7 @@ body{
                     margin-bottom: 1rem;
                 }
                 p{
-                    font-size: 1.2rem;
+                    font-size: 1.5rem;
                 }
             }
         }

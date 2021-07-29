@@ -599,7 +599,7 @@ body {
 #tutor {
   padding: 3rem 0;
   background-color: #ececec;
-  min-height: 60vh;
+  min-height: 75vh;
   height: auto;
 }
 
@@ -645,10 +645,30 @@ body {
 }
 
 #tutor .box-con .main-box .sub-box .img-box {
+  position: relative;
   width: 20rem;
   height: 20rem;
   border-radius: 50rem;
   margin-bottom: 1rem;
+}
+
+#tutor .box-con .main-box .sub-box .img-box::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.541);
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#tutor .box-con .main-box .sub-box .img-box:hover::after {
+  opacity: 1;
 }
 
 #tutor .box-con .main-box .sub-box .img-box img {
@@ -661,6 +681,28 @@ body {
   border-radius: 100%;
 }
 
+#tutor .box-con .main-box .sub-box .img-box .img-con {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 999;
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#tutor .box-con .main-box .sub-box .img-box .img-con a {
+  font-size: 2rem;
+  color: white;
+  margin-left: 1rem;
+}
+
+#tutor .box-con .main-box .sub-box .img-box:hover .img-con {
+  opacity: 1;
+}
+
 #tutor .box-con .main-box .sub-box h2 {
   font-size: 2.5rem;
   font-weight: 400;
@@ -668,6 +710,6 @@ body {
 }
 
 #tutor .box-con .main-box .sub-box p {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=file.css.map */
