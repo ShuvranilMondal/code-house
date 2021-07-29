@@ -595,4 +595,79 @@ body {
             transform: translateY(1);
   }
 }
+
+#tutor {
+  padding: 3rem 0;
+  background-color: #ececec;
+  min-height: 60vh;
+  height: auto;
+}
+
+#tutor h3 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 4rem;
+  font-weight: 400;
+  margin-bottom: 3rem;
+}
+
+#tutor .box-con {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+#tutor .box-con .main-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#tutor .box-con .main-box .sub-box {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#tutor .box-con .main-box .sub-box .img-box {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50rem;
+  margin-bottom: 1rem;
+}
+
+#tutor .box-con .main-box .sub-box .img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 100%;
+}
+
+#tutor .box-con .main-box .sub-box h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+#tutor .box-con .main-box .sub-box p {
+  font-size: 1.2rem;
+}
 /*# sourceMappingURL=file.css.map */

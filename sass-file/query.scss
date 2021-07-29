@@ -57,6 +57,18 @@
             
         }
     }
+    #tutor{
+        .box-con{
+            .main-box{
+                display: flex;
+                justify-content: space-between;
+                flex-direction:column;
+                .sub-box{
+                    margin-top: 2rem;
+                }
+            }
+        }
+    }
 }
 #items{
     .course-items{

@@ -47,6 +47,21 @@
     border: 1px solid red;
     margin: 0 1rem;
   }
+  #tutor .box-con .main-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #tutor .box-con .main-box .sub-box {
+    margin-top: 2rem;
+  }
 }
 
 #items .course-items {
