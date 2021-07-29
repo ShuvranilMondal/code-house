@@ -62,6 +62,10 @@
   #tutor .box-con .main-box .sub-box {
     margin-top: 2rem;
   }
+  #about-us .about-con .about-items .about-para {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
 }
 
 #items .course-items {

@@ -312,7 +312,7 @@ body{
 
 #items{
     padding: 5rem;
-    background-color: rgb(230, 230, 230);
+    background-color: rgb(216, 216, 216);
 
     h2{
         text-align: center;
@@ -534,4 +534,52 @@ body{
             }
         }
     }
+}
+#about-us{
+    padding: 5rem 0;
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    background:linear-gradient(rgba(0, 0, 0, 0.658),rgba(0, 0, 0, 0.658)), url(../img/0_m9cmw2Z4Kx5IYomG.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    .about-con{
+        padding: 2rem;
+        @include container;
+        h2{
+            text-align: left;
+            text-transform: capitalize;
+            font-size: 4rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+            color: white;
+        }
+        .about-items{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-direction: row;
+            .about-para{
+                width: 50%;
+                height: auto;
+                P{
+                    color: white;
+                    font-size: 1.5rem;
+                }
+            }
+            .about-img{
+                width: 50rem;
+                height: 30rem;
+                border: 1px solid white;
+                img{
+                    @include img;
+                }
+            }
+        }
+    }
+
 }
