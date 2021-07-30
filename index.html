@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./sass-file/file.css">
     <script src="https://kit.fontawesome.com/7dcc66eb72.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./sass-file/query.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
@@ -16,7 +17,7 @@
             <ul class="nav-items" id="nav">
                 <li><a href="#items">Courses</a></li>
                 <li><a href="#">contact</a></li>
-                <li><a href="#">About us</a></li>
+                <li><a href="#about-us">About us</a></li>
             </ul>
             <a href="#" id="nav-btn"><i class="fas fa-bars"></i></a>
         </div>
@@ -68,8 +69,8 @@
         </div>
     </section>
     <section id="vd-box">
-        <h2>video tutorial</h2>
-        <div class="vd-con">
+        <h2 data-aos="fade-down" data-aos-duration="1000">video tutorial</h2>
+        <div class="vd-con" data-aos="fade-up" data-aos-duration="2000">
             <div  id="pre-btn"><i class="fas fa-angle-double-left"></i></div>
             <div id="video"><embed src="https://www.youtube.com/embed/hBh_CC5y8-s" type=""></div>
             <div  id="nxt-btn"><i class="fas fa-angle-double-right"></i></div>
@@ -121,13 +122,13 @@
     </section>
     <section id="about-us">
         <div class="about-con">
-            <h2>About Us</h2>
+            <h2 data-aos="fade-right" data-aos-duration="1000">About Us</h2>
             <div class="about-items">
-                <div class="about-para">
+                <div class="about-para" data-aos="fade-right" data-aos-duration="2000">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id eius quasi maxime sit deserunt voluptas corrupti, recusandae blanditiis odio aut eos harum dolorem in officia laborum itaque excepturi fugit libero doloribus quaerat ipsa cupiditate ut nostrum. Officia, necessitatibus adipisci? Ratione, laudantium numquam natus praesentium molestias nam quas? Vitae dolores rem iusto dolor quas temporibus, quia magni molestiae! Doloribus maxime nisi quaerat amet illum omnis iure, cupiditate eaque similique minus, velit temporibus, dolorem mollitia. Eaque aliquam nam quasi quo sint. Temporibus, eum voluptatem esse vel consequatur, ut suscipit sed atque officia rem quam voluptatibus molestiae nemo maiores culpa possimus fugiat! Facilis blanditiis eaque praesentium, tempore, ad sapiente ex, asperiores earum autem voluptatibus officiis optio ipsum sequi ratione expedita facere. Voluptatum commodi accusantium corporis cumque tempore eius dicta. Veritatis laboriosam facilis debitis deleniti autem deserunt temporibus architecto? Repudiandae voluptate consequatur eaque reprehenderit, similique explicabo incidunt fuga qui a libero nulla, at officiis nobis necessitatibus voluptates vero animi reiciendis excepturi consequuntur? Nihil qui possimus repellendus. Voluptates accusamus necessitatibus deserunt magni facilis, obcaecati dolores quas sed itaque voluptatem nesciunt officiis veniam vero et! Sapiente ducimus temporibus provident? Nam ab, in sunt delectus quasi itaque doloribus corporis pariatur sit voluptatum officia sed velit hic reiciendis.</p>
                 </div>
-                <div class="about-img">
-                    <img src="" alt="">
+                <div class="about-img" data-aos="fade-left" data-aos-duration="2000">
+                    <img src="./img/of1.jpg" alt="" id="off-img">
                 </div>
             </div>
         </div>
@@ -143,5 +144,9 @@
     <a href="#" class="" id="home-btn"><i class="fas fa-home"></i></a>
     <script src="./js-file/file.js"></script>
     <script src="./js-file/file2.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>

@@ -33,3 +33,17 @@ preBtn.addEventListener('click',()=>{
     video.innerHTML = vdList[count];
 })
 
+let officeImg = document.getElementById("off-img");
+
+let changeoffImg=()=>{
+    let imgArr = ['./img/of2.jpg','./img/of3.png','./img/of4.jpg','./img/of1.jpg'];
+    let count = 0;
+    setInterval(() => {
+        if(count > imgArr.length-1){
+            count = 0;
+        }
+        officeImg.src = imgArr[count];
+        count = count + 1;
+    }, 4000);
+}
+changeoffImg();

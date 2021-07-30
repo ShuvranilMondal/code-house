@@ -487,6 +487,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.534)), to(rgba(0, 0, 0, 0.534))), url(../img/code-wallpaper-38.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.534), rgba(0, 0, 0, 0.534)), url(../img/code-wallpaper-38.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 #vd-box h2 {
@@ -495,6 +501,7 @@ body {
   font-size: 4rem;
   font-weight: 400;
   margin-bottom: 3rem;
+  color: orangered;
 }
 
 #vd-box .vd-con {
@@ -513,7 +520,7 @@ body {
 #vd-box .vd-con #video {
   width: 80rem;
   height: 40rem;
-  border: 1px solid red;
+  border: 1px solid white;
   margin: 0 3rem;
 }
 
@@ -715,6 +722,7 @@ body {
 }
 
 #about-us {
+  overflow: hidden;
   padding: 5rem 0;
   width: 100%;
   min-height: 100vh;

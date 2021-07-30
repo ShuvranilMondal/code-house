@@ -375,12 +375,18 @@ body{
     align-items: center;
     display: flex;
     flex-direction: column;
+    background: linear-gradient(rgba(0, 0, 0, 0.534),rgba(0, 0, 0, 0.534)),url(../img/code-wallpaper-38.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     h2{
         text-align: center;
         text-transform: capitalize;
         font-size: 4rem;
         font-weight: 400;
         margin-bottom: 3rem;
+        color: orangered;
     }
 
     .vd-con{
@@ -391,7 +397,7 @@ body{
         #video{
             width: 80rem;
             height: 40rem;
-            border: 1px solid red;
+            border: 1px solid white;
             margin: 0 3rem;
 
             embed{
@@ -536,6 +542,7 @@ body{
     }
 }
 #about-us{
+    overflow: hidden;
     padding: 5rem 0;
     width: 100%;
     min-height: 100vh;
