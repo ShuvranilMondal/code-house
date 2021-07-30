@@ -94,6 +94,14 @@
             }
         }
     }
+    #footer{
+        padding-bottom: 10rem;
+        .footer-con{
+            .foot-item{
+                flex-direction: column;
+            }
+        }
+    }
         
 }
 

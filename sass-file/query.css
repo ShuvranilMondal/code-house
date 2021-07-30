@@ -78,5 +78,14 @@
     min-width: 20rem;
     margin-right: 2rem;
   }
+  #footer {
+    padding-bottom: 10rem;
+  }
+  #footer .footer-con .foot-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=query.css.map */

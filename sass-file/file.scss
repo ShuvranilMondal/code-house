@@ -662,3 +662,63 @@ body{
         }
     }
 }
+#footer{
+    padding: 3rem 0;
+    background: black;
+    .footer-con{
+        @include container;
+        .foot-item{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+
+            .box{
+                h2{
+                    color: white;
+                    font-size: 2rem;
+                    margin-bottom: 1rem;
+                    border-bottom: 1px solid white;
+                }
+                ul{
+                    list-style: none;
+                    text-align: center;
+
+                    li{
+                        font-size: 1.5rem;
+                        margin-bottom: 0.5rem;
+                        a{
+                            color: white;
+                            @include tran;
+                            &:hover{
+                                color: orangered;
+                            }
+                        }
+                    }
+                }
+            }
+            .box1{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                h2{
+                    font-size: 3rem;
+                    color: white;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    letter-spacing: 0.2rem;
+        
+                    span{
+                        color: orangered;
+                        font-weight: 700;
+                        font-size: 4rem;
+                    }
+                }
+                p{
+                    color: white;
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+}
