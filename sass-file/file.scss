@@ -590,3 +590,75 @@ body{
     }
 
 }
+#contect{
+    padding: 2rem 0 7rem 0;
+    min-height: 80vh;
+    height: auto;
+    width: 100%;
+    background-color: rgb(221, 221, 221);
+    h2{
+        text-align: center;
+        text-transform: capitalize;
+        font-size: 4rem;
+        font-weight: 400;
+        margin-bottom: 2rem;
+        color: black;
+    }
+    .contact-con{
+        @include container;
+        .contact-item{
+            width: 100%;
+            height: 40rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            .map{
+                width: 30rem;
+                height: 100%;
+                box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+                margin: 1rem;
+            }
+            .form{
+                width: 30rem;
+                height: 100%;
+                box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+                margin: 1rem;
+                padding: 2rem 1rem 2rem 1rem;
+                background: white;
+
+                input{
+                    display: block;
+                    width: 100%;
+                    padding: 1rem;
+                    outline: none;
+                    border: none;
+                    border-bottom: 1px solid gray;
+                    margin-bottom: 1rem;
+                    height: 4rem;
+                }
+                textarea{
+                    display: block;
+                    width: 100%;
+                    border: none;
+                    border-bottom: 1px solid gray;
+                    padding: 1rem;
+                    outline: none;
+                }
+                button{
+                    display: block;
+                    margin: 2rem auto;
+                    background-color: orangered;
+                    box-shadow: none;
+                    padding: 0.3em 0.8em;
+                    border: none;
+                    color: white;
+
+                    &:hover{
+                        background-color: rgb(221, 60, 1);
+                    }
+                }
+            }
+        }
+    }
+}
